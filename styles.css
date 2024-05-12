@@ -290,16 +290,41 @@ body {
 .destinos h1 {
     color: #B3221C;
     text-transform: uppercase;
-    margin-top: 3%;
-    margin-left: 5%;
+    margin-top: 5%;
+    margin-left: 15%;
 }
 
 .destinos h2{
     margin-top: 1%;
-    margin-left: 5%;
+    margin-left: 15%;
 }
 
 .destinos h3{
     margin-top: 1%;
-    margin-left: 5%;
+    margin-left: 15%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 170px 170px 170px 170px;
+    padding: 30px 15px 15px 15px;
+    margin-left: 15%;
+    width: 65%;
+    justify-content: center;    
+}
+.grid-item {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.top-peliculas {
+    background-color: #000;
+    height: 200px;
+}
+
+.top-peliculas h3{
+    margin-left: 15%;
+    padding-top: 2%;
+    color: #ddd;
 }
