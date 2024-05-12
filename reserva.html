@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turismo cinematografico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <img src="img 2/logo 1.png" alt="logo">
+    <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+    <nav>
+      <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+      <div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Destinos</a></li>
+        <li><a href="Reserva.html">Reserva</a></li>
+        <li><a href="#">Estrenos</a></li>
+        <li><a href="#">nosotros</a></li>
+        <li><a href="#">
+          <img src="img 2/person_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="icono de perfil"></a></li>
+      </ul>
+    </div>
+    </nav>
+  </header>
+
+  <main>
+   <h1>Reserva tu fecha</h1>
+   <section>
+    <ol>
+      <li>Origen</li>
+      <select name="Pais">
+        <option value="Argentina">Argentina</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Chile">Chile</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Uruguay">Uruguay</option>
+      </select>
+      <li>Destino</li>
+      <select name="Continente">
+        <option value="Asia">Asia</option>
+        <option value="Europa">Europa</option>
+        <option value="Latinoamerica">Latinoamerica</option>
+        <option value="America del norte">America del norte</option>
+        <option value="Viajes nacionales">Viajes nacionales</option>
+      </select>
+      <li>Ida</li>
+      <input name="Ida" type="date" min="01-01-2024" max="31-12-2030">
+      <li>Vuelta</li>
+      <input name="Vuelta" type="date" min="01-01-2024" max="31-12-2030">
+      <li>Personas</li>
+      <input name="Personas" type="number" step="1" min="1" max="4">
+      <li><a href="#"> 
+        <img src="img 2/busqueda.png" alt="Lupa">Buscar</a></li>
+    </ol>
+   </section>
+
+   <div>
+    <p>Podés cancelar tus compras realizadas de forma online o telefonica dentro de un plazo máximo de 10 días desde la fecha que realizaste la compra.</p> 
+    <input type="submit" value="Boton de arrepentimiento">
+   </div>
+
+  </main>
+
+  <footer>
+    <div>
+    </div>
+  </footer>
+</body>
+</html>
