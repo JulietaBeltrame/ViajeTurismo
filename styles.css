@@ -337,7 +337,7 @@ body {
     white-space: nowrap; /* Evita que los elementos se desplacen a una nueva línea */
     margin-left: 25%;
     margin-bottom: 5%;
-  
+    z-index: -100;
   }
   
   .container {
@@ -493,3 +493,10 @@ body {
       flex: 2 0px;
     }
   }
+
+.img-fondo-destino {
+    width: 400px;
+    height: 200px;
+    z-index: -2423;
+    margin-left: 40%;
+}
