@@ -38,6 +38,10 @@ body {
     padding: 10px;
 }
 
+.categorias a:hover {
+    color: yellow;
+  }
+
 .menu-toggle {
     display: none;
     color: #fff;
