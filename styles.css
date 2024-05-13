@@ -114,9 +114,11 @@ body {
     justify-content: space-evenly;
     
 }
+.peliculas-populares{
+  margin-top: 5%;
+}
 
-.populares{
-    margin-top: 8%;
+.peliculas-populares p{ 
     margin-left: 6%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -129,12 +131,13 @@ body {
 }
 
 .buscador input[type="text"] {
-    padding: 10px;
-    width: 300px;
+    padding: 10px 10px 10px 15px;
+    width: 500px;
     border: none;
     background-color: #000;
     color: #fff;
-    text-align: center;
+    text-align: left;
+    border-radius: 12px;
 }
 
 .buscador input[type="text"]::placeholder {
