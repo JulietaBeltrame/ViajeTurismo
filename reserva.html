@@ -5,22 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Turismo cinematografico</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+
 </head>
 
 <body>
   <header>
-    <img src="img 2/logo 1.png" alt="logo">
-    <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
     <nav class="menu">
       <div class="logo">
           <img src="img/logo (1).png" alt="Logo">
       </div>
       <div class="categorias">
-          <a href="destinos.html">Destinos</a>
-          <a href="elecciones.html">Elección</a>
-          <a href="reserva.html">Reserva</a>
-          <a href="#">Información</a>
-          <a href="#">Contacto</a>
+        <a href="index.html">Inicio</a>
+        <a href="destinos.html">Destinos</a>
+        <a href="elecciones.html">Elección</a>
+        <a href="reserva.html">Reserva</a>
+        <a href="#">Información</a>
+        <a href="#">Contacto</a>
       </div>
       <div class="menu-toggle">
           <i class="fas fa-bars"></i>
@@ -29,46 +30,108 @@
   </header>
 
   <main>
-   <h1>Reserva tu fecha</h1>
-   <section>
-    <ol>
-      <li>Origen</li>
-      <select name="Pais">
-        <option value="Argentina">Argentina</option>
-        <option value="Bolivia">Bolivia</option>
-        <option value="Chile">Chile</option>
-        <option value="Colombia">Colombia</option>
-        <option value="Uruguay">Uruguay</option>
-      </select>
-      <li>Destino</li>
-      <select name="Continente">
-        <option value="Asia">Asia</option>
-        <option value="Europa">Europa</option>
-        <option value="Latinoamerica">Latinoamerica</option>
-        <option value="America del norte">America del norte</option>
-        <option value="Viajes nacionales">Viajes nacionales</option>
-      </select>
-      <li>Ida</li>
-      <input name="Ida" type="date" min="01-01-2024" max="31-12-2030">
-      <li>Vuelta</li>
-      <input name="Vuelta" type="date" min="01-01-2024" max="31-12-2030">
-      <li>Personas</li>
-      <input name="Personas" type="number" step="1" min="1" max="4">
-      <li><a href="#"> 
-        <img src="img 2/busqueda.png" alt="Lupa">Buscar</a></li>
-    </ol>
-   </section>
-
-   <div>
-    <p>Podés cancelar tus compras realizadas de forma online o telefonica dentro de un plazo máximo de 10 días desde la fecha que realizaste la compra.</p> 
-    <input type="submit" value="Boton de arrepentimiento">
-   </div>
-
+    <div id="booking" class="section">
+      <div class="section-center">
+        <div class="container">
+          <div class="row">
+            <div class="booking-form">
+              <form>
+                <div class="form-group">
+                  <div class="form-checkbox">
+                    <label for="roundtrip">
+                      <input type="radio" id="roundtrip" name="flight-type">
+                      <span></span>Ida y vuelta
+                    </label>
+                    <label for="one-way">
+                      <input type="radio" id="one-way" name="flight-type">
+                      <span></span>Ida
+                    </label>
+                    <label for="multi-city">
+                      <input type="radio" id="multi-city" name="flight-type">
+                      <span></span>Varios destinos
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <span class="form-label">Origen</span>
+                      <input class="form-control" type="text" placeholder="Ciudad o aeropuerto">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <span class="form-label">Destino</span>
+                      <input class="form-control" type="text" placeholder="Ciudad o aeropuerto">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <span class="form-label">Fecha de ida</span>
+                      <input class="form-control" type="date" required>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <span class="form-label">Fecha de vuelta</span>
+                      <input class="form-control" type="date" required>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <span class="form-label">Adultos (18+)</span>
+                      <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <span class="form-label">Niños (0-17)</span>
+                      <select class="form-control">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <span class="form-label">Clase</span>
+                      <select class="form-control">
+                        <option>Economy class</option>
+                        <option>Business class</option>
+                        <option>First class</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-btn">
+                      <button class="submit-btn">Mostrar vuelos</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
     <div>
     </div>
   </footer>
+  <script src="js.js"></script>
 </body>
 </html>
