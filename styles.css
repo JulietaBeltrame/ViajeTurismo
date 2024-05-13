@@ -423,18 +423,21 @@ body {
   }
   
   .footer__addr {
+    margin-top: 0.5%;
     margin-left: 15%;
     margin-right: 1.25em;
     margin-bottom: 2em;
   }
   
   .footer__addr h2 {
-    margin-top: 1.3em;
+  
+  
     font-size: 15px;
     font-weight: 400;
   }
   
   .nav__title {
+  
     font-weight: 400;
     font-size: 15px;
   }
@@ -533,4 +536,30 @@ body {
     height: 200px;
     z-index: -2423;
     margin-left: 40%;
+}
+.grid-inicio{
+  background-color: #000;
+  margin-top: 4%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 200px 800px;
+  padding: 30px 15px 15px 15px;
+  justify-content: center;    
+}
+.container-img-inicio{
+  padding: 3%;
+  margin-left: 11%;
+}
+
+.texto-inicio{
+  margin-left: 50%;
+  text-align: center;
+  width: 40%;
+  color: white;
+  margin-top: 2%;
+}
+
+.texto-inicio h3 {
+  text-transform: uppercase;
+  margin-bottom: 2%;
 }
