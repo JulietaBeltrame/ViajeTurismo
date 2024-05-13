@@ -262,7 +262,7 @@ body {
     position: relative;
     display: inline-block;
     padding-left: 70%;
-    bottom: 68px;
+    bottom: 58px;
 
   }
   
@@ -320,68 +320,97 @@ body {
 
 .top-peliculas {
     background-color: #000;
-    height: 400%;
+    height: 500px;
     margin-top: 3%;
 }
 
 .top-peliculas h3{
     margin-left: 15%;
-    padding-top: 1%;
+    padding-top: 3%;
     color: #ddd;
 }
 
 .carousel {
-    margin-top: 3%;
-    width: 50%; /* Ajusta el ancho según sea necesario */
-    overflow-x: auto; /* Permite desplazamiento horizontal */
-    white-space: nowrap; /* Evita que los elementos se desplacen a una nueva línea */
-    margin-left: 25%;
-    margin-bottom: 5%;
-    z-index: -100;
-  }
-  
-  .container {
-    display: inline-block; /* Mantiene los contenedores en una línea horizontal */
-    width: 200px; /* Tamaño de cada imagen */
-    margin-right: 50px; /* Espacio entre las imágenes */
-    position: relative;
-  }
-  
-  .image {
-    display: block;
-    min-width: 200px;
-    height: 200px;
-    border-radius: 8px;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0, 140, 186, 0.8);
-  }
-  
-  .container:hover .overlay {
-    opacity: 1;
-  }
-  
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+  margin-top: 3%;
+  max-width: 100%; /* Ajusta el ancho máximo según sea necesario */
+  overflow: hidden; /* Evita que los elementos se desplacen más allá del ancho del contenedor */
+  position: relative;
+}
+
+.carousel-inner {
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  overflow-x: auto; /* Permitir desplazamiento horizontal */
+  scroll-behavior: smooth; /* Animación suave de desplazamiento */
+  scroll-snap-type: x mandatory; /* Desplazamiento en "snap" horizontal */
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.195);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.container {
+  display: inline-block; /* Mantiene los contenedores en una línea horizontal */
+  width: 200px; /* Tamaño de cada imagen */
+  margin-right: 20px; /* Espacio entre las imágenes */
+  position: relative;
+}
+
+.image {
+  display: block;
+  min-width: 200px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 140, 186, 0.8);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
   
   .footer {
+    margin-top: 5%;
     display: flex;
     flex-flow: row wrap;
     padding: 30px 30px 30px;
@@ -391,6 +420,7 @@ body {
   }
   
   .footer__addr {
+    margin-left: 15%;
     margin-right: 1.25em;
     margin-bottom: 2em;
   }
@@ -456,6 +486,7 @@ body {
   }
   
   .legal {
+    margin-right: 15%;
     display: flex;
     flex-wrap: wrap;
     color: #999;

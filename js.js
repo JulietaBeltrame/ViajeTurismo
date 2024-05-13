@@ -33,3 +33,28 @@ toggle between hiding and showing the dropdown content */
     }
   }
 
+  document.addEventListener("DOMContentLoaded", function() {
+    const carousel = document.querySelector(".carousel");
+    const prevButton = carousel.querySelector(".prev-btn");
+    const nextButton = carousel.querySelector(".next-btn");
+    const carouselInner = carousel.querySelector(".carousel-inner");
+    const containerWidth = carouselInner.offsetWidth; // Ancho de cada contenedor de imagen
+    let scrollAmount = 0;
+    const scrollStep = containerWidth; // Desplaza una vez a la vez
+  
+    prevButton.addEventListener("click", function() {
+      // Desplazar hacia la izquierda
+      if (scrollAmount > 0) {
+        scrollAmount -= scrollStep;
+        carouselInner.scrollLeft = scrollAmount;
+      }
+    });
+  
+    nextButton.addEventListener("click", function() {
+      // Desplazar hacia la derecha
+      if (scrollAmount < carouselInner.scrollWidth - containerWidth) {
+        scrollAmount += scrollStep;
+        carouselInner.scrollLeft = scrollAmount;
+      }
+    });
+  });
