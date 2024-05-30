@@ -76,11 +76,11 @@ body {
     }
 }
 .fondo{
-  background-image: url(img/index-bg-img.png);
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("img\fondo-index.png");
+  }
 
 #titulo {
 
@@ -507,7 +507,7 @@ body {
 .img-fondo-destino {
     width: 400px;
     height: 200px;
-    z-index: -100;
+    z-index: -2423;
     margin-left: 40%;
 }
 .grid-inicio{
